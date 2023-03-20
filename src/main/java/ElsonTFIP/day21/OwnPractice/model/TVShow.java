@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+//Using lombok allows us to not need to set any getter/setter/constructors. Under hood these are created for us.
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,23 +16,5 @@ public class TVShow {
     private String genre;
     private Float rating;
 
-
-    // public static TVShow populate(SqlRowSet rs) {
-    //     TVShow tvShow = new TVShow();
-    //     tvShow.setId(rs.getInt("id"));
-    //     tvShow.setName(rs.getString("name"));
-    //     tvShow.setNetwork(rs.getString("network"));
-    //     tvShow.setRating(rs.getInt("rating"));
-    //     return tvShow;
-    // }
-
-    // public JsonObject toJSON() {
-    //     JsonObjectBuilder builder = Json.createObjectBuilder();
-    //     builder.add("id", this.id);
-    //     builder.add("name", this.name);
-    //     builder.add("network", this.network);
-    //     builder.add("rating", this.rating);
-    //     return builder.build();
-    // }
 }
 
