@@ -7,9 +7,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
+import org.springframework.stereotype.Repository;
 
 import ElsonTFIP.day21.OwnPractice.model.TVShow;
 
+@Repository
 public class TVShowRepository {
 
     //JdbcTemplate acts as a connection pool between DB(mysql) and spring application

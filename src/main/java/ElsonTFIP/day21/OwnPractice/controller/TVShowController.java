@@ -19,7 +19,7 @@ public class TVShowController {
     @Autowired
     private TVShowService tvShowService;
 
-    @GetMapping("/{id}")
+    @GetMapping("/")
     public ResponseEntity<List<TVShow>> getTvShows() {
         List<TVShow> tvShows = tvShowService.findAll();
 
