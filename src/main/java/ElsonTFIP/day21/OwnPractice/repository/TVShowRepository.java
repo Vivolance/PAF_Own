@@ -17,7 +17,7 @@ public class TVShowRepository {
     @Autowired
     private JdbcTemplate template;
 
-    public List<TVShow> get(final int limit, final int offset) {
+    public List<TVShow> getTvShows(final int limit, final int offset) {
 
         final List<TVShow> result = new LinkedList<>();
 
